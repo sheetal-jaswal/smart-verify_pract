@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" name="Smart Verify">
+  <listeners>
+    <listener class-name="com.hcl.sv.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="PROJECT_Test1">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+ <class name="com.hcl.sv.testscripts.TYSS_SV_Existing_003"/> </classes>
+  </test> <!-- PROJECT_Test1 -->
+</suite> <!-- Smart Verify -->
